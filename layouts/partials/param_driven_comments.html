@@ -1,6 +1,6 @@
 {{ with .Params.comments }}
 <div class="article-content">
     <h3>Comments Welcome!</h3>
-    <p>{{ .Params.comment_message . | safeHTML }}</p>
+    <p>{{ .Params.comment_message | safeHTML }}</p>
 </div>
 {{ end }}
