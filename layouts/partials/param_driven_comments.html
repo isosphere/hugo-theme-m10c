@@ -1,3 +1,5 @@
 {{ with .Params.comments }}
-<p>{{ .Params.comment_message | safeHTML }}</p>
+<div>
+    This post is associated with this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">toot!</a>. Please interact there.
+</div>
 {{ end }}
