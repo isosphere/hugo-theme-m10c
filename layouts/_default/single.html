@@ -11,8 +11,8 @@
         <div>
           {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
           {{ .ReadingTime }} min read
-          {{ partial "param_driven_comments.html" . }}
         </div>
+        {{ partial "param_driven_comments.html" . }}
         {{- with .Params.tags }}
         <div>
           {{ partial "icon.html" (dict "ctx" $ "name" "tag") }}
