@@ -1,5 +1,7 @@
 {{ with .Params.comments }}
 <div>
-    This post is associated with this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">toot</a>! Please interact there.
+    <p>
+        This post is associated with this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">toot</a>! Please interact there.
+    </p>
 </div>
 {{ end }}
