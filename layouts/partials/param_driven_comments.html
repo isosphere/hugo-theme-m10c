@@ -1,7 +1,15 @@
 {{ with .Params.comments }}
-<div>
-    <p>
-        This post is associated with this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">toot</a>! Please interact there.
-    </p>
+<div class="mastodon">
+    <div class="logo">
+        <a href="https://joinmastodon.org/">
+            <img src="/svg/mastodon.svg" alt="Mastodon" />
+        </a>
+    </div>
+    <div class="text">
+        <p>
+            This post is associated with this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">toot</a>! Please interact there.
+        </p>
+    </div>
 </div>
+<div style="clear: both;"></div>
 {{ end }}
